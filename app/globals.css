@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to pure blackwork aesthetic - deep blacks with minimal color */
+  --background: oklch(0.08 0 0); /* Pure black background */
+  --foreground: oklch(0.95 0 0); /* Pure white text */
+  --card: oklch(0.12 0 0); /* Very dark gray cards */
+  --card-foreground: oklch(0.95 0 0); /* White text on cards */
+  --popover: oklch(0.08 0 0); /* Black popover */
+  --popover-foreground: oklch(0.95 0 0); /* White popover text */
+  --primary: oklch(0.95 0 0); /* White primary for high contrast */
+  --primary-foreground: oklch(0.08 0 0); /* Black text on white */
+  --secondary: oklch(0.15 0 0); /* Dark gray secondary */
+  --secondary-foreground: oklch(0.9 0 0); /* Light gray on secondary */
+  --muted: oklch(0.18 0 0); /* Muted dark */
+  --muted-foreground: oklch(0.7 0 0); /* Muted light gray */
+  --accent: oklch(0.2 0 0); /* Dark accent */
+  --accent-foreground: oklch(0.95 0 0); /* White on accent */
+  --destructive: oklch(0.5 0.2 0); /* Red for destructive */
+  --destructive-foreground: oklch(1 0 0); /* White on red */
+  --border: oklch(0.25 0 0); /* Dark borders */
+  --input: oklch(0.12 0 0); /* Dark inputs */
+  --ring: oklch(0.95 0 0); /* White focus ring */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.25rem; /* Sharper corners for blackwork aesthetic */
+  --sidebar: oklch(0.08 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.12 0 0);
+  --sidebar-primary-foreground: oklch(0.95 0 0);
+  --sidebar-accent: oklch(0.15 0 0);
+  --sidebar-accent-foreground: oklch(0.9 0 0);
+  --sidebar-border: oklch(0.25 0 0);
+  --sidebar-ring: oklch(0.95 0 0);
+}
+
+.dark {
+  /* Dark mode maintains the same pure blackwork theme */
+  --background: oklch(0.05 0 0); /* Even deeper black */
+  --foreground: oklch(0.98 0 0); /* Brighter white text */
+  --card: oklch(0.1 0 0); /* Darker cards */
+  --card-foreground: oklch(0.98 0 0); /* Brighter white card text */
+  --popover: oklch(0.05 0 0); /* Deeper black popover */
+  --popover-foreground: oklch(0.98 0 0); /* Brighter white popover text */
+  --primary: oklch(0.98 0 0); /* Brighter white primary */
+  --primary-foreground: oklch(0.05 0 0); /* Deeper black text on white */
+  --secondary: oklch(0.12 0 0); /* Darker secondary */
+  --secondary-foreground: oklch(0.92 0 0); /* Brighter light gray on secondary */
+  --muted: oklch(0.15 0 0); /* Darker muted */
+  --muted-foreground: oklch(0.72 0 0); /* Brighter muted gray */
+  --accent: oklch(0.18 0 0); /* Darker accent */
+  --accent-foreground: oklch(0.98 0 0); /* Brighter white on accent */
+  --destructive: oklch(0.45 0.25 0); /* Darker red */
+  --destructive-foreground: oklch(0.98 0 0); /* Brighter white on red */
+  --border: oklch(0.22 0 0); /* Darker borders */
+  --input: oklch(0.1 0 0); /* Darker inputs */
+  --ring: oklch(0.98 0 0); /* Brighter white focus ring */
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.05 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.1 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.12 0 0);
+  --sidebar-accent-foreground: oklch(0.92 0 0);
+  --sidebar-border: oklch(0.22 0 0);
+  --sidebar-ring: oklch(0.98 0 0);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom geometric patterns and artistic typography styles */
+.geometric-pattern {
+  background-image: linear-gradient(45deg, transparent 40%, rgba(0, 0, 0, 0.05) 50%, transparent 60%),
+    linear-gradient(-45deg, transparent 40%, rgba(0, 0, 0, 0.05) 50%, transparent 60%);
+  background-size: 20px 20px;
+}
+
+.artistic-text {
+  font-weight: 900; /* Bolder weight for blackwork aesthetic */
+  letter-spacing: 0.15em; /* More spacing for dramatic effect */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sharp shadow for contrast */
+}
+
+.hero-pattern {
+  background-color: #000000;
+  /* Bold radiating lines like blackwork */
+  background-image: radial-gradient(circle at 30% 30%, transparent 30%, rgba(255, 255, 255, 0.1) 32%, transparent 34%),
+    radial-gradient(circle at 70% 70%, transparent 30%, rgba(255, 255, 255, 0.1) 32%, transparent 34%),
+    /* Sharp geometric overlay */
+    linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.05) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.05) 50%, transparent 51%);
+  background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
+}
+
+/* Updated geometric patterns for darker theme with golden accents */
+.geometric-bg {
+  background-color: #000000; /* Pure black background */
+  /* Bold blackwork-inspired geometric patterns */
+  /* Sharp triangular patterns like blackwork linework */
+  background-image: linear-gradient(30deg, transparent 48%, rgba(255, 255, 255, 0.08) 50%, transparent 52%),
+    linear-gradient(150deg, transparent 48%, rgba(255, 255, 255, 0.08) 50%, transparent 52%),
+    linear-gradient(270deg, transparent 48%, rgba(255, 255, 255, 0.08) 50%, transparent 52%),
+    /* Dotwork pattern like blackwork stippling */
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0.5px, transparent 0.5px),
+    /* Bold geometric grid like blackwork structure */
+    linear-gradient(0deg, transparent 49%, rgba(255, 255, 255, 0.06) 50%, transparent 51%),
+    linear-gradient(90deg, transparent 49%, rgba(255, 255, 255, 0.06) 50%, transparent 51%);
+  background-size: 80px 80px, 80px 80px, 80px 80px, 60px 60px, 60px 60px, 100px 100px, 150px 150px, 150px 150px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 30px 30px, 0 0, 0 0, 0 0;
+}
+
+/* Updated mandala pattern for darker theme */
+.mandala-pattern {
+  background-color: #0a0a0a; /* Near black background */
+  /* Blackwork-inspired mandala and sacred geometry patterns */
+  /* Concentric circles like blackwork mandalas */
+  background-image: radial-gradient(circle at 50% 50%, transparent 35%, rgba(255, 255, 255, 0.08) 37%, transparent 39%),
+    radial-gradient(circle at 50% 50%, transparent 50%, rgba(255, 255, 255, 0.05) 52%, transparent 54%),
+    /* Sharp geometric lines like blackwork structure */
+    linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.06) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.06) 50%, transparent 51%), /* Dotwork texture */
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 60px 60px, 60px 60px, 40px 40px, 40px 40px;
+}
+
+/* Added new blackwork-specific patterns */
+.blackwork-pattern {
+  background-color: #000000;
+  /* Heavy blackwork-inspired patterns with bold contrast */
+  /* Bold tribal-like lines */
+  background-image: linear-gradient(60deg, transparent 47%, rgba(255, 255, 255, 0.12) 50%, transparent 53%),
+    linear-gradient(120deg, transparent 47%, rgba(255, 255, 255, 0.12) 50%, transparent 53%),
+    /* Dense dotwork texture */
+    radial-gradient(circle at 33% 33%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 66% 66%, rgba(255, 255, 255, 0.2) 1px, transparent 1px), /* Sharp geometric grid */
+    linear-gradient(0deg, transparent 48%, rgba(255, 255, 255, 0.08) 50%, transparent 52%),
+    linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.08) 50%, transparent 52%);
+  background-size: 100px 100px, 100px 100px, 30px 30px, 30px 30px, 200px 200px, 200px 200px;
+}
+
+.dotwork-pattern {
+  background-color: #050505;
+  /* Dense dotwork pattern like blackwork stippling */
+  background-image: radial-gradient(circle at 16% 16%, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15) 0.8px, transparent 0.8px),
+    radial-gradient(circle at 84% 84%, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    radial-gradient(circle at 25% 75%, rgba(255, 255, 255, 0.12) 0.6px, transparent 0.6px),
+    radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.12) 0.6px, transparent 0.6px);
+  background-size: 25px 25px, 35px 35px, 25px 25px, 45px 45px, 45px 45px;
+}
+
+/* Added aggressive CSS to hide v0 branding and watermarks */
+/* Hide v0 branding elements aggressively */
+[data-v0-branding],
+[data-v0-watermark],
+.v0-branding,
+.v0-watermark,
+*[class*="v0-"],
+*[id*="v0-"],
+*[data-testid*="v0"],
+*[aria-label*="v0"],
+*[title*="v0"],
+*[alt*="v0"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  pointer-events: none !important;
+}
+
+/* Hide footer links and credits that might contain v0 references */
+footer a[href*="v0"],
+footer a[href*="vercel.com/v0"],
+.footer-credits,
+.powered-by,
+.made-with,
+.built-with {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Additional aggressive hiding for any remaining v0 elements */
+div[class*="watermark"],
+div[class*="branding"],
+span[class*="credit"],
+small[class*="powered"],
+a[href*="v0.dev"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
