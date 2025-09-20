@@ -193,14 +193,14 @@ export default function ManoWillSite() {
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                <p className="text-base leading-relaxed mb-6 text-balance text-white/90">
                   <strong className="text-white">Mano Will</strong> é tatuador especializado no estilo{" "}
                   <strong className="text-white">Blackwork</strong>, um universo onde o preto é protagonista e ganha
                   vida através de linhas firmes, contrastes intensos e sombreados profundos. Seu trabalho é marcado pela
                   busca constante de unir estética, identidade e significado, transformando cada tatuagem em uma peça
                   única e carregada de expressão.
                 </p>
-                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                <p className="text-base leading-relaxed mb-6 text-balance text-white/90">
                   Entre os temas que mais inspiram suas criações estão as{" "}
                   <strong className="text-white">mitologias</strong>, com seus símbolos atemporais e arquétipos
                   poderosos; os <strong className="text-white">animais selvagens</strong>, que representam instinto,
@@ -209,12 +209,12 @@ export default function ManoWillSite() {
                   profundidade do Blackwork e sua capacidade de transmitir emoção através do contraste do preto sobre a
                   pele.
                 </p>
-                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                <p className="text-base leading-relaxed mb-6 text-balance text-white/90">
                   Ao mesmo tempo, Mano Will acredita que a arte da tatuagem é um campo em constante transformação. Por
                   isso, além de seus temas favoritos, mantém-se aberto a explorar novas ideias e composições, criando
                   projetos exclusivos que dialogam com a história, a personalidade e os desejos de cada cliente.
                 </p>
-                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                <p className="text-base leading-relaxed mb-8 text-balance text-white/90">
                   Mais do que apenas estética, cada tatuagem é pensada como uma forma de expressão pessoal. No estúdio,
                   o compromisso é oferecer um trabalho realizado com técnica, autenticidade e segurança, em um ambiente
                   profissional e acolhedor, garantindo que cada pessoa saia não apenas com uma tatuagem, mas com uma
@@ -223,19 +223,19 @@ export default function ManoWillSite() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Award className="w-5 h-5 text-white" />
-                    <span className="text-white/90">Especialista em blackwork e dotwork</span>
+                    <span className="text-sm text-white/90">Especialista em blackwork e dotwork</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Star className="w-5 h-5 text-white" />
-                    <span className="text-white/90">Estúdio privado exclusivo</span>
+                    <span className="text-sm text-white/90">Estúdio privado exclusivo</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Calendar className="w-5 h-5 text-white" />
-                    <span className="text-white/90">Atendimento personalizado</span>
+                    <span className="text-sm text-white/90">Atendimento personalizado</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Instagram className="w-5 h-5 text-white" />
-                    <span className="text-white/90">
+                    <span className="text-sm text-white/90">
                       Conheça mais do portfólio no Instagram:{" "}
                       <a
                         href="https://www.instagram.com/manowilltattoo/"
@@ -272,7 +272,7 @@ export default function ManoWillSite() {
             </h2>
             <div className="text-center mb-12">
               <Shield className="w-16 h-16 text-white mx-auto mb-6" />
-              <p className="text-xl text-balance leading-relaxed text-white/90">
+              <p className="text-lg text-balance leading-relaxed text-white/90">
                 Sua segurança é nossa prioridade. Seguimos rigorosamente todos os protocolos de higiene e esterilização
                 para garantir um ambiente 100% seguro e profissional.
               </p>
@@ -285,7 +285,7 @@ export default function ManoWillSite() {
                     <CheckCircle className="w-6 h-6 text-white" />
                     Esterilização Completa
                   </h3>
-                  <ul className="space-y-3 text-white/80">
+                  <ul className="space-y-3 text-sm text-white/80">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-white mt-1 flex-shrink-0" />
                       <span>Agulhas descartáveis de uso único</span>
@@ -308,7 +308,7 @@ export default function ManoWillSite() {
                     <CheckCircle className="w-6 h-6 text-white" />
                     Ambiente Controlado
                   </h3>
-                  <ul className="space-y-3 text-white/80">
+                  <ul className="space-y-3 text-sm text-white/80">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-white mt-1 flex-shrink-0" />
                       <span>Limpeza e desinfecção constante</span>
@@ -330,7 +330,7 @@ export default function ManoWillSite() {
               <Card className="bg-black/70 border-2 border-white/30">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4 text-white">Compromisso com a Excelência</h3>
-                  <p className="text-lg text-balance leading-relaxed text-white/90">
+                  <p className="text-base text-balance leading-relaxed text-white/90">
                     Cada sessão é realizada com o máximo cuidado e atenção aos detalhes. Você pode confiar que está em
                     mãos profissionais, em um ambiente que prioriza sua saúde e bem-estar acima de tudo.
                   </p>
