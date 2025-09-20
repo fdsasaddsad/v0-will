@@ -413,12 +413,12 @@ export default function ManoWillSite() {
                     <h3 className="text-lg font-bold text-white">Instagram</h3>
                   </div>
                   <a
-                    href="https://www.instagram.com/mano.will/"
+                    href="https://www.instagram.com/manowilltattoo/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-lg hover:text-white/80 transition-colors text-white/90"
                   >
-                    @mano.will
+                    @manowilltattoo
                   </a>
                 </CardContent>
               </Card>
@@ -450,7 +450,7 @@ export default function ManoWillSite() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center space-x-6 mb-6">
             <a
-              href="https://www.instagram.com/mano.will/"
+              href="https://www.instagram.com/manowilltattoo/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white/80 transition-colors text-white"
