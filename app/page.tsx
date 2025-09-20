@@ -194,11 +194,31 @@ export default function ManoWillSite() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
-                  Mano Will é um tatuador especialista em <strong className="text-white">blackwork</strong>, conhecido
-                  por sua técnica refinada em linhas precisas, sombreados densos e composições que exploram o contraste
-                  máximo entre preto e pele. Trabalhando em seu estúdio privado em Sorocaba, oferece um ambiente
-                  exclusivo e personalizado para cada cliente, focando na criação de peças artísticas que combinam
-                  elementos góticos, geométricos e orgânicos característicos do blackwork.
+                  <strong className="text-white">Mano Will</strong> é tatuador especializado no estilo{" "}
+                  <strong className="text-white">Blackwork</strong>, um universo onde o preto é protagonista e ganha
+                  vida através de linhas firmes, contrastes intensos e sombreados profundos. Seu trabalho é marcado pela
+                  busca constante de unir estética, identidade e significado, transformando cada tatuagem em uma peça
+                  única e carregada de expressão.
+                </p>
+                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                  Entre os temas que mais inspiram suas criações estão as{" "}
+                  <strong className="text-white">mitologias</strong>, com seus símbolos atemporais e arquétipos
+                  poderosos; os <strong className="text-white">animais selvagens</strong>, que representam instinto,
+                  força e liberdade; e a <strong className="text-white">natureza</strong>, fonte de energia vital,
+                  equilíbrio e conexão com o essencial. Esses elementos se tornaram pilares de sua arte, refletindo a
+                  profundidade do Blackwork e sua capacidade de transmitir emoção através do contraste do preto sobre a
+                  pele.
+                </p>
+                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                  Ao mesmo tempo, Mano Will acredita que a arte da tatuagem é um campo em constante transformação. Por
+                  isso, além de seus temas favoritos, mantém-se aberto a explorar novas ideias e composições, criando
+                  projetos exclusivos que dialogam com a história, a personalidade e os desejos de cada cliente.
+                </p>
+                <p className="text-lg leading-relaxed mb-8 text-balance text-white/90">
+                  Mais do que apenas estética, cada tatuagem é pensada como uma forma de expressão pessoal. No estúdio,
+                  o compromisso é oferecer um trabalho realizado com técnica, autenticidade e segurança, em um ambiente
+                  profissional e acolhedor, garantindo que cada pessoa saia não apenas com uma tatuagem, mas com uma
+                  marca que represente quem realmente é.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -213,8 +233,23 @@ export default function ManoWillSite() {
                     <Calendar className="w-5 h-5 text-white" />
                     <span className="text-white/90">Atendimento personalizado</span>
                   </div>
+                  <div className="flex items-center gap-3">
+                    <Instagram className="w-5 h-5 text-white" />
+                    <span className="text-white/90">
+                      Conheça mais do portfólio no Instagram:{" "}
+                      <a
+                        href="https://www.instagram.com/manowilltattoo/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-white/80 transition-colors font-bold"
+                      >
+                        @manowilltattoo
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
+
               <div className="relative">
                 <div className="absolute inset-0 bg-white/10 rounded-lg transform rotate-3 border-2 border-white/20"></div>
                 <img

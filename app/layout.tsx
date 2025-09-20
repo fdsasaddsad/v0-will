@@ -9,15 +9,17 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Mano Will - Tatuador Especialista em Blackwork | Sorocaba - SP",
   description:
-    "Mano Will é um tatuador especialista em blackwork com estúdio privado em Sorocaba, SP. Atendimento personalizado e técnicas refinadas.",
-  keywords: "tatuagem, tattoo, blackwork, Mano Will, Sorocaba, tatuador, estúdio privado",
+    "Mano Will é tatuador especializado em Blackwork, criando peças únicas que unem estética, identidade e significado. Especialista em mitologias, animais selvagens e natureza. Estúdio em Sorocaba, SP.",
+  keywords:
+    "tatuagem, tattoo, blackwork, Mano Will, Sorocaba, tatuador, estúdio privado, mitologia, animais selvagens, natureza",
   authors: [{ name: "Mano Will" }],
   openGraph: {
     title: "Mano Will - Tatuador Especialista em Blackwork",
-    description: "Especialista em blackwork com estúdio privado em Sorocaba",
+    description:
+      "Especialista em Blackwork criando peças únicas com mitologias, animais selvagens e natureza. Estúdio privado em Sorocaba, SP.",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
